@@ -21,17 +21,17 @@ The project aims to demonstrate building a REST API with Flask.This is a multi-t
 
 ## Routes
 
- - /signup (POST): Registers a new user and creates a new organization.
- - /signin (POST): Logs in an existing user.
- - /reset-password (POST): Resets the user's password.
- - /invite-member (POST): Sends an invite to a user to join an organization.
- - /accept-invite (GET): Allows invited users to accept and create an account.
- - /delete_member (DELETE): Removes a member from an organization.
- - /update_member_role (PUT): Updates a member's role in an organization.
- - /stats/role-wise-users (GET): Retrieves the number of users per role.
- - /stats/org-wise-members (GET): Retrieves the number of members per organization.
- - /stats/org-role-wise-users (GET): Retrieves organization-wise role-wise user counts.
- - /stats/org-role-wise-users-filtered (GET): Retrieves organization-wise role-wise user counts with date filtering.
+ - /signup (POST) : Registers a new user and creates a new organization.
+ - /signin (POST) : Logs in an existing user.
+ - /reset-password (POST) : Resets the user's password.
+ - /invite-member (POST) : Sends an invite to a user to join an organization.
+ - /accept-invite (GET) : Allows invited users to accept and create an account.
+ - /delete_member (DELETE) : Removes a member from an organization.
+ - /update_member_role (PUT) : Updates a member's role in an organization.
+ - /stats/role-wise-users (GET) : Retrieves the number of users per role.
+ - /stats/org-wise-members (GET) : Retrieves the number of members per organization.
+ - /stats/org-role-wise-users (GET) : Retrieves organization-wise role-wise user counts.
+ - /stats/org-role-wise-users-filtered (GET) : Retrieves organization-wise role-wise user counts with date filtering.
 
 
 ->Installation and Setup
@@ -51,7 +51,7 @@ The project aims to demonstrate building a REST API with Flask.This is a multi-t
                                               pip install --upgrade flask-jwt-extended
  
    Set up the database                   :    flask db init
- 	                                          flask db migrate -m "Initial migration"
+ 	                                            flask db migrate -m "Initial migration"
                                               flask db upgrade
  
    Run the server                        :    Python run.py 
@@ -74,6 +74,9 @@ The project aims to demonstrate building a REST API with Flask.This is a multi-t
 5.Other Info :
 
  -->The service uses Flask-Mail to send alerts for actions like login, signup, and password reset. Ensure that you configure your SMTP server credentials in the environment variables for sending emails.
+ 
  --> Error Handling: The application returns appropriate HTTP 400 status codes for Successful and bad requests.
+ 
  --> Modularity: The application is designed to be modular, with separate services handling business logic, making the codebase easy to maintain and extend.
+ 
  -->All APIs require data in JSON format. Some APIs, such as authentication, return a JWT token to be used in subsequent requests.
