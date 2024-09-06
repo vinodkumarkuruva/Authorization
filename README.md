@@ -36,7 +36,7 @@ The project aims to demonstrate building a REST API with Flask.This is a multi-t
 
 ->Installation and Setup
 
-1. Clone the repository : git clone https://github.com/username/project-name.git
+1. Clone the repository : git clone https://github.com/vinodkumarkuruva/Authorization.git
 
 2.Prerequisites -  Python 3.12: Ensure that Python is installed on your system
                    Flask - As a Framework
