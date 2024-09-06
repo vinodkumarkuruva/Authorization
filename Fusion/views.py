@@ -9,11 +9,10 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import uuid
 from datetime import datetime
 
-# Ensure the mail configuration is loaded from environment variables or a configuration file.
 def send_alert(email):
     msg = Message(
         'Login Alert',
-        sender='kuruvavinodkumar6529@gmail.com',  # Consider moving this to a configuration file
+        sender='kuruvavinodkumar6529@gmail.com', 
         recipients=[email]
     )
     msg.body = 'A new login or reset password or signup was detected from your account.'
@@ -103,8 +102,7 @@ def invite_member():
     recipient = data.get('recipient')
     organization_id = data.get('organization_id')
     role_id = data.get('role_id')
-    # role_name = data.get('role_name')
-
+    
     if not recipient or not organization_id or not role_id:
         return jsonify({'msg': 'Missing required fields'}), 400
 
