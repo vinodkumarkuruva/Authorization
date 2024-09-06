@@ -33,8 +33,6 @@ class Role(db.Model):
     description = db.Column(db.String, nullable=True)
     org_id = db.Column(db.Integer, db.ForeignKey('organization.id'), nullable=False)
 
-    # organization = db.relationship('Organization', backref=db.backref('roles', lazy=True))
-
 
 class Member(db.Model):
     id = db.Column(db.Integer, primary_key=True)
