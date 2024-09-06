@@ -66,9 +66,9 @@ The project aims to demonstrate building a REST API with Flask.This is a multi-t
  │   ├── models.py        		    # Contains the database models 
  │   ├── views.py         		    # Defines the API endpoints
  │   ├── __init__.py         		# Initializes the Flask app and SQLAlchemy
- ├── requirements.txt   			# Python dependencies         
- ├── migrations/        			# Directory for database migrations
- ├── app.py             			# Script for running the application             
+ ├── requirements.txt   		    	# Python dependencies         
+ ├── migrations/        		    	# Directory for database migrations
+ ├── app.py             	   		# Script for running the application             
  └── README.md              		# Project documentation
 
 5.Other Info :
