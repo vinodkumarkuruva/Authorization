@@ -18,10 +18,8 @@ app.config['MAIL_DEFAULT_SENDER'] = 'kuruvavinodkumar6529@gmail.com'
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir+'data.sqlite')
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Database@localhost/Auth'
 app.config['SQLALCHEMY_TRACK_MODIICATIONS'] = False
-# app.config["OPENAPI_SWAGGER_UI_PATH"] = "/swagger-ui"
-# app.config["OPENAPI_SWAGGER_UI_URL"] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
+
 
 db = SQLAlchemy(app)
 Migrate(app,db)
